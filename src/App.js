@@ -1,8 +1,18 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { publicRoutes } from "./routes/publicRoutes";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {  
+
+  useEffect(()=> {
+    AOS.init({
+      duration: 1500
+    });
+  },[])
+
   return (
     <div>     
       <Navbar>

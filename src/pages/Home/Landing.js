@@ -1,12 +1,13 @@
 import React from "react";
 import BucketGirl from "../../assets/images/bucketgirl.png";
 
+
 const Landing = () => {
   return (
     <div className='relative'>
       <div class='hero h-screen lg:h-[60vh] bg-accent relative z-10 mt-16'>
         <div class='hero-content flex-col lg:flex-row'>
-          <div>
+          <div data-aos="fade-right">
             <p
               data-aos='fade-right'
               data-aos-duration='1000'
@@ -41,7 +42,7 @@ const Landing = () => {
             </button>
           </div>
           <div className='h-[60vh] shrink-0'>
-            <img src={BucketGirl} class='h-full' alt='' />
+            <img data-aos="zoom-in-up" src={BucketGirl} class='h-full' alt='' />
           </div>
         </div>
       </div>
